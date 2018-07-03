@@ -41,6 +41,7 @@ class Puzzle_Day01Tests: XCTestCase {
         let result5 = Utility.sum(of: "112")
         let result6 = Utility.sum(of: "ankit kumar bharti, DOB:- 09/04/1994")
         let result7 = Utility.sum(of: "4 - Lucky number, ankit kumar bharti, Mood:- 😎, DOB:- 09-April-1994")
+        let result8 = Utility.sum(of: "@4 - Lucky number, ankit kumar bharti, Mood:- 😎, DOB:- 09-April-1994@")
         
         XCTAssertTrue(result1 == 3, "result of 1122 should be 3")
         XCTAssertTrue(result2 == 4, "result of 1111 should be 4")
@@ -49,5 +50,6 @@ class Puzzle_Day01Tests: XCTestCase {
         XCTAssertTrue(result5 == 1, "result of 112 should be 1")
         XCTAssertTrue(result6 == 9, "result of ankit kumar bharti 09041994 should be 1")
         XCTAssertTrue(result7 == 13, "result of \'4 - Lucky number, ankit kumar bharti, Mood:- 😎, DOB:- 09-April-1994\' should be 13")
+        XCTAssertTrue(result8 == 9, "result of \'@4 - Lucky number, ankit kumar bharti, Mood:- 😎, DOB:- 09-April-1994@\' should be 9")
     }
 }
